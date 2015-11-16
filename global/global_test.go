@@ -1,8 +1,9 @@
 package global
 
 import (
-	_ "github.com/motemen/go-loghttp/global"
 	"net/http"
+
+	_ "github.com/walf443/go-loghttp/global"
 )
 
 var client = &http.Client{}
