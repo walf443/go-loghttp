@@ -3,11 +3,11 @@ go-loghttp
 
 Log http.Client's requests and responses automatically.
 
-[GoDoc](http://godoc.org/github.com/motemen/go-loghttp)
+[GoDoc](http://godoc.org/github.com/walf443/go-loghttp)
 
-## Synopsis
+## Example
 
-To log all the HTTP requests/responses, import `github.com/motemen/go-loghttp/global`.
+To log all the HTTP requests/responses, import `github.com/walf443/go-loghttp/global`.
 
 ```go
 package main
@@ -49,8 +49,10 @@ client := &http.Client{
 }
 ```
 
-You can modify [loghttp.Transport](http://godoc.org/github.com/motemen/go-loghttp#Transport)'s `LogRequest` and `LogResponse` to customize logging function.
+You can modify [loghttp.Transport](http://godoc.org/github.com/walf443/go-loghttp#Transport)'s `DoAround` to customize logging function.
 
 ## Author
 
-motemen <motemen@gmail.com>
+Keiji Yoshimi ( @walf443 )
+
+Original code and idea written by motemen on https://github.com/motemen/go-loghttp
